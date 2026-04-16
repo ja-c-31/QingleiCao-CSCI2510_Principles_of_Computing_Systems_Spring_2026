@@ -1,0 +1,60 @@
+Question 1:
+
+return type: void *
+Expected argument: void *
+
+Question 3:
+
+First Thread!
+Thread has terminated.
+
+
+Question 4:
+
+struct thread_args {
+    int arg1;
+    char arg2[100];
+    int ret;
+};
+
+Question 5:
+
+Inside thread:
+thread arg1: 42
+thread arg2: Hello from the main
+Back in main:
+return value written by thread: 84
+
+
+Question 7:
+
+Inside thread 0
+thread arg1: 0
+thread arg2: This is a thread 0
+Inside thread 1
+thread arg1: 1
+thread arg2: This is a thread 1
+Inside thread 2
+thread arg1: 2
+thread arg2: This is a thread 2
+Inside thread 3
+thread arg1: 3
+thread arg2: This is a thread 3
+Inside thread 4
+thread arg1: 4
+thread arg2: This is a thread 4
+
+Back in main after all threads finished:
+Thread 0 returned ret = 0
+Thread 1 returned ret = 10
+Thread 2 returned ret = 20
+Thread 3 returned ret = 30
+Thread 4 returned ret = 40
+
+
+Question 8:
+
+The output ordering is different across runs. The threads do not always print in order from 0, 1, 2, 3, 4.
+This because threads run concurrently, and the OS scheduler decides which threads to run first or in queue and
+because thread scheduling can vary, the ouput order cannot be determined every run
+
