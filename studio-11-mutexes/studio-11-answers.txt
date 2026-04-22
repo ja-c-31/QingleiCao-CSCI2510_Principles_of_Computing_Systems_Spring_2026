@@ -1,0 +1,77 @@
+Question1:
+
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+
+Question 2:
+
+
+Question 3:
+
+If I synchronize my access then only one thread can modify race at a time.
+I believe the numeric value to be 0
+The prgram will take longer to run as locking and unlocking a mutex adds overhead
+
+Question 4:
+
+jafet_cald@LAPTOP-43OL0LJD:/mnt/c/Users/calde/QingleiCao-CSCI2510_Principles_of_Computing_Systems_Spring_2026-main/studio-11-mutexes$ ./studio-11-code
+Final value of race: 0
+jafet_cald@LAPTOP-43OL0LJD:/mnt/c/Users/calde/QingleiCao-CSCI2510_Principles_of_Computing_Systems_Spring_2026-main/studio-11-mutexes$ ./studio-11-code
+Final value of race: 0
+jafet_cald@LAPTOP-43OL0LJD:/mnt/c/Users/calde/QingleiCao-CSCI2510_Principles_of_Computing_Systems_Spring_2026-main/studio-11-mutexes$ ./studio-11-code
+Final value of race: 0
+jafet_cald@LAPTOP-43OL0LJD:/mnt/c/Users/calde/QingleiCao-CSCI2510_Principles_of_Computing_Systems_Spring_2026-main/studio-11-mutexes$ ./studio-11-code
+Final value of race: 0
+
+
+Question 5:
+
+Final value of race: 0
+
+real    0m2.286s
+user    0m2.545s
+sys     0m1.964s
+
+Final value of race: 0
+
+real    0m2.460s
+user    0m2.834s
+sys     0m2.020s
+
+Final value of race: 0
+
+real    0m2.474s
+user    0m2.961s
+sys     0m1.919s
+
+avg time: 0m1.967s
+
+Question 6:
+
+Final value of race: 0
+
+real    0m2.508s
+user    0m2.962s
+sys     0m2.002s
+
+Final value of race: 0
+
+real    0m2.411s
+user    0m2.867s
+sys     0m1.894s
+
+Final value of race: 0
+
+real    0m2.596s
+user    0m2.880s
+sys     0m2.248s
+
+Performed 0m0.081 s slower
+
+Question 7:
+
+
+
+Question 8:
+
+
+
