@@ -1,0 +1,96 @@
+Question 1:
+
+Jafet Calderon Concepcion
+
+Question 2:
+
+The four letter password is 'pass'
+
+Question 3:
+
+The five letter password is 'ferry'
+
+Question 4:
+
+real    0m53.417s
+user    0m53.709s
+sys     0m0.004s
+
+
+Question 5:
+
+2 Threads:
+real    0m27.972s
+user    0m56.118s
+sys     0m0.000s
+
+4 Threads:
+real    0m15.749s
+user    1m0.110s
+sys     0m0.009s
+
+8 Threads:
+real    0m9.655s
+user    1m8.844s
+sys     0m0.012s
+
+13 Threads:
+real    0m7.642s
+user    1m36.042s
+sys     0m0.219s
+
+26 Threads:
+real    0m7.951s
+user    1m30.650s
+sys     0m0.290s
+
+Question 6:
+
+2 Threads: 442889
+4 Threads: 787056
+8 Threads: 1287148
+13 Threads: 1625872
+26 Threads: 1564130
+
+euestion 7:
+
+My program became faster when I used more threads, but the speedup was not perfectly proportional. Two threads did not make the program twice as fast, and eight threads did not make it eight times faster. This happens because thread creation, scheduling, synchronization, and CPU-core limits add overhead. Also, my program divides work by the first letter of the password, so the work is split into at most 26 major groups.
+
+Question 8:
+
+The maximum hashrate I recorded was when I used 13 threads with a hashrate of 1625872
+
+Question 9:
+
+Keysize 1: 26
+Keysize 2: 702
+Keysize 3: 18278
+Keysize 4: 475254
+Keysize 5: 12356630
+Keysize 6: 321272406
+Keysize 7: 8353082582
+Keysize 8: 217180147158
+
+Question 10:
+
+5137 For the second to last Total hashes
+133577 For the last total hash
+Increasing key length greatly increases security because each added character multiplies the search space by 26. This means that a password of length 8 is
+not just slightly harder than length 5 but would take more guesses
+
+Question 11:
+
+52 Characters estimated time: 12398 s
+62 characters estimated time: 35507 s
+93 characters estimated time: 402259 s
+
+Question 12:
+
+My submission only searches lowercase alphabetic passwords from a to z, as required. It supports keysizes from 1 through 8. It exits quickly after finding
+a match but some threads may briefly continue until it notices the shared found variable.
+
+Question 13:
+
+No extra credit was done
+
+
