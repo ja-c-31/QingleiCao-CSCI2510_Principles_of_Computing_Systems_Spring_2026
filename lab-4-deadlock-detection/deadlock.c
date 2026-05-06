@@ -5,7 +5,6 @@
 #define NUM_RES 15
 #define MAX_EDGES 256
 
-
 static int waiting[NUM_PROCS][NUM_RES];
 
 static int held_by[NUM_RES];
@@ -67,7 +66,7 @@ static void print_edge(const Edge *edge) {
 }
 
 static void print_cycle(void) {
-
+    
     for (int i = path_len - 1; i >= 0; i--) {
         print_edge(&path[i]);
     }
@@ -141,9 +140,6 @@ static void acquire_resource(int process, int resource) {
     }
 }
 
-/*
- * Returns the process that receives the released resource, or -1 if nobody does.
- */
 static int release_resource(int process, int resource) {
     if (!valid_ids(process, resource)) {
         return -1;
@@ -203,3 +199,4 @@ int main(void) {
     printf("0\n");
     return 0;
 }
+
